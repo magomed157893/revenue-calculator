@@ -1,0 +1,180 @@
+.revenue-calc {
+    max-width: 516px;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+.revenue-calc__body {
+    margin: 0 0 16px 0;
+}
+
+.revenue-calc__wrapper {
+    display: flex;
+    align-items: end;
+}
+
+.revenue-calc__wrapper:first-child {
+    margin: 0 0 16px 0;
+}
+
+.revenue-calc__limit {
+    flex-basis: 80px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+}
+
+.revenue-calc__limit_left {
+    text-align: left;
+}
+
+.revenue-calc__limit_right {
+    text-align: right;
+}
+
+.revenue-calc__inner {
+    flex: 1;
+    margin: 0 12px;
+}
+
+.revenue-calc__view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 16px 0;
+}
+
+.revenue-calc__view-text {
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.revenue-calc__show {
+    display: flex;
+    align-items: center;
+}
+
+.revenue-calc__number {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    color: black;
+    padding: 3px 0;
+    margin: 0;
+    outline: none;
+    border-radius: 0;
+    border: 1px solid #D9D9D9;
+    background-color: transparent;
+}
+
+.revenue-calc__number::-webkit-outer-spin-button,
+.revenue-calc__number::-webkit-inner-spin-button {
+    display: none;
+}
+
+.revenue-calc__number_two {
+    width: 30px;
+}
+
+.revenue-calc__number_three {
+    width: 40px;
+}
+
+.revenue-calc__postfix {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 0 8px;
+    color: black;
+}
+
+.revenue-calc__slider {
+    margin: 0 0 6px 0;
+}
+
+.noUi-target {
+    background: #FBE122;
+    border: none;
+    box-shadow: none;
+}
+
+.noUi-horizontal {
+    height: 6px;
+}
+
+.noUi-connect {
+    background: #319B42;
+}
+
+.noUi-handle {
+    width: 22px !important;
+    height: 22px !important;
+    right: -11px !important;
+    top: -8px !important;
+    border: none;
+    border-radius: 50%;
+    background: #476D4D;
+    box-shadow: none;
+    cursor: e-resize;
+}
+
+.noUi-handle::after, 
+.noUi-handle::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 8px;
+    width: 2px;
+    background: white;
+    border-radius: 4px;
+}
+
+.noUi-handle::after {
+    left: 70%;
+    top: 50%;
+    transform: translate(-30%, -50%);
+}
+
+.noUi-handle::before {
+    left: 30%;
+    top: 50%;
+    transform: translate(-70%, -50%);
+}
+
+.noUi-touch-area::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 2px;
+    background: white;
+    border-radius: 4px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.revenue-calc__result {
+    text-align: center;
+}
+
+.revenue-calc__result-text {
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.revenue-calc__result-text:first-child {
+    margin: 0 0 8px 0;
+}
+
+.revenue-calc__result-text b {
+    font-weight: bold;
+}

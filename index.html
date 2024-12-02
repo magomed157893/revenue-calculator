@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/nouislider.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Range</title>
+</head>
+
+<body>
+    <div class="revenue-calc">
+        <div class="revenue-calc__body">
+            <div class="revenue-calc__wrapper">
+                <div class="revenue-calc__limit revenue-calc__limit_right">&lt;20</div>
+                <div class="revenue-calc__inner">
+                    <div class="revenue-calc__view">
+                        <p class="revenue-calc__view-text">Площадь моего магазина</p>
+                        <div class="revenue-calc__show">
+                            <input class="revenue-calc__number revenue-calc__number_two" type="number" id="revenue-two">
+                            <span class="revenue-calc__postfix">м<sup>2</sup></span>
+                        </div>
+                    </div>
+                    <div class="revenue-calc__slider" id="revenue-area"></div>
+                </div>
+                <div class="revenue-calc__limit revenue-calc__limit_left">&gt;40</div>
+            </div>
+            <div class="revenue-calc__wrapper">
+                <div class="revenue-calc__limit revenue-calc__limit_right">&lt;100 тыс</div>
+                <div class="revenue-calc__inner">
+                    <div class="revenue-calc__view">
+                        <p class="revenue-calc__view-text">Закупка товара</p>
+                        <div class="revenue-calc__show">
+                            <input class="revenue-calc__number revenue-calc__number_three" type="number"
+                                id="revenue-three">
+                            <span class="revenue-calc__postfix">тыс руб</span>
+                        </div>
+                    </div>
+                    <div class="revenue-calc__slider" id="revenue-purchase"></div>
+                </div>
+                <div class="revenue-calc__limit revenue-calc__limit_left">&gt;1 млн</div>
+            </div>
+        </div>
+        <div class="revenue-calc__result">
+            <p class="revenue-calc__result-text">Примерная выручка с продажи продукции</p>
+            <p class="revenue-calc__result-text" id="revenue-result"></p>
+        </div>
+    </div>
+
+    <script src="./vendor/nouislider.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
